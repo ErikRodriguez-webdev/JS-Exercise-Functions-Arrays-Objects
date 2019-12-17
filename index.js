@@ -254,7 +254,7 @@ function getOlderCars(inventory, aYear) {
 
   for (let i = 0; i < inventory.length; i++) {
     if (inventory[i].car_year <= aYear) {
-      carsByYear.push(inventory[i].car_year);
+      carsByYear.push(inventory[i]);
     }
   }
   return carsByYear;
@@ -271,9 +271,7 @@ function getOlderCars(inventory, aYear) {
  * made by either `Audi` or `Mercedes-Benz` or `Volkswagen` or `BMW`,
  * in the same order as they appear in the original inventory.
  */
-function getGermanCars(/* code here */) {
-  /* code here */
-}
+function getGermanCars() {}
 
 /**
  * ### Challenge refactor to arrow functions
